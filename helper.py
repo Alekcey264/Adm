@@ -10,6 +10,7 @@ def working_with_parameter(parameter):
             os.remove(database_path)
         with db:
             db.create_tables([client, order])
+            #asdasdasd
     elif parameter.lower() == "fill":
         if os.path.isfile(database_path):
             list_for_insert_into_clients = []
