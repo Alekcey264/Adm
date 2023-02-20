@@ -1,8 +1,4 @@
-import helper
-
-def main():
-    parameter = input()
-    helper.working_with_parameter(parameter)
+from helper import main
 
 if __name__ == "__main__":
     main()
