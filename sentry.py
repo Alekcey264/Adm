@@ -7,8 +7,8 @@ sentry_sdk.init(
 
 with sentry_sdk.configure_scope() as scope:
     scope.set_tag('first tag','keep loading')
-    c = 2
+    zero = 0
     try:
-        print(c/0)
+        print(zero/0)
     except Exception:
         sentry_sdk.capture_message("Exception")
